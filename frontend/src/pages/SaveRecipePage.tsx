@@ -78,9 +78,9 @@ export default function SaveRecipePage() {
 			) : recipes.length === 0 ? (
 				<p className="text-2xl font-extrabold text-white mt-10 tracking-tight">No saved recipes found.</p>
 			) : (
-				<div className="w-full max-h-[calc(100vh-200px)] overflow-y-auto scrollbar-hide px-2">
+				<div className="w-full max-h-[calc(100vh-200px)] overflow-y-auto scrollbar-hide px-2 mt-15">
 					<div
-						className={`w-full max-w-6xl mx-auto grid gap-6 
+						className={`w-full max-w-6xl mx-auto grid gap-7 
 							${
 								recipes.length === 1
 									? 'grid-cols-1 place-items-center'

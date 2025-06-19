@@ -44,8 +44,8 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ title, ingredients, instruction
         transition-shadow
         duration-300
         w-full
-        max-w-sm
-        h-[370px]
+        max-w-xl
+        h-[400px]
         flex flex-col
         overflow-hidden
         border border-yellow-500/20
@@ -76,7 +76,7 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ title, ingredients, instruction
 				{/* Ingredients */}
 				<div className="mb-4 text-slate-300">
 					<h3 className="font-bold text-yellow-400 flex items-center gap-1 mb-2">🧂 Ingredients</h3>
-					<ul className="list-disc ml-5 space-y-1 text-sm leading-relaxed">
+					<ul className="list-disc ml-8 space-y-1 text-lg leading-relaxed">
 						{ingredients.map((item, idx) => (
 							<li key={idx}>{item}</li>
 						))}
@@ -85,8 +85,8 @@ const RecipeCard: React.FC<RecipeCardProps> = ({ title, ingredients, instruction
 
 				{/* Instructions */}
 				<div className="text-slate-300">
-					<h3 className="font-semibold text-yellow-300 mb-1">👨‍🍳 Instructions</h3>
-					<ol className="list-decimal list-inside text-sm space-y-1">
+					<h3 className="font-bold text-yellow-400 flex items-center gap-1 mb-2">👨‍🍳 Instructions</h3>
+					<ol className="list-decimal list-inside text-lg space-y-1 ml-6 mt-3">
 						{instructions.map((step, idx) => (
 							<li key={idx}>{step.replace(/^\d+\.\s*/, '')}</li>
 						))}

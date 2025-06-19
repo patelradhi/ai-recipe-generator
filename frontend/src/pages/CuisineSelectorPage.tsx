@@ -56,11 +56,11 @@ export default function CuisineSelectorPage() {
 		<div className="min-h-screen w-full bg-gradient-to-br from-[#232946] via-[#393e46] to-[#6e7ff3] px-4 py-8">
 			<h2 className="text-4xl font-extrabold text-center mb-6 text-white drop-shadow-md">Select Cuisine Type</h2>
 
-			<div className="flex flex-wrap justify-center gap-4 mb-6">
+			<div className="flex flex-wrap justify-center gap-6 mb-10 mt-10">
 				{cuisineOptions.map((cuisine) => (
 					<label
 						key={cuisine}
-						className={`flex items-center gap-2 px-5 py-2 rounded-full border font-semibold text-sm shadow-sm transition-all cursor-pointer backdrop-blur-md ${
+						className={`flex items-center gap-2 px-7 py-3 rounded-full border font-semibold text-sm shadow-sm transition-all cursor-pointer backdrop-blur-md ${
 							selectedCuisine === cuisine
 								? 'bg-blue-600 text-white border-blue-700'
 								: 'bg-white/80 text-gray-900 border-gray-300 hover:bg-blue-100'
@@ -79,18 +79,18 @@ export default function CuisineSelectorPage() {
 				))}
 			</div>
 
-			<h2 className="text-2xl font-bold text-center text-white drop-shadow-sm">
+			<h2 className="text-2xl font-bold text-center text-white drop-shadow-sm mt-12">
 				select a card to discover something delicious!
 			</h2>
 
 			<Carousel
-				plugins={[Autoplay({ delay: 3000 })]}
+				plugins={[Autoplay({ delay: 2000 })]}
 				opts={{ loop: true }}
-				className="w-full max-w-6xl mx-auto mt-10 pt-4 relative"
+				className="w-full max-w-7xl mx-auto mt-10 pt-4 relative "
 			>
 				<CarouselContent>
 					{ingredientGroups[selectedCuisine].map((ingredients, index) => (
-						<CarouselItem key={index} className="basis-80">
+						<CarouselItem key={index} className="basis-85">
 							<IngredientCard
 								ingredients={ingredients}
 								onClick={() => handleCardClick(ingredients)}

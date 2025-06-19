@@ -82,13 +82,13 @@ export default function Home() {
 
 	return (
 		<div className="w-full min-h-[calc(100vh-64px)] flex-1 bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#334155] flex flex-col items-center px-1 py-1 overflow-hidden">
-			<h1 className="text-2xl font-extrabold text-white mt-10 tracking-tight">
+			<h1 className="text-2xl font-extrabold text-white mt-15 mb-8 tracking-tight">
 				What’s in your fridge? Let’s cook!
 			</h1>
 
 			<form
 				onSubmit={handleSubmit(onSubmit)}
-				className="bg-white/10 backdrop-blur-md mt-7 w-full max-w-xl rounded-2xl border border-white/20 shadow-[0_4px_30px_rgba(0,0,0,0.2)] p-3 flex items-center gap-3 transition-all duration-300 hover:shadow-xl hover:ring-2 hover:ring-white/30 focus-within:ring-2 focus-within:ring-white/30"
+				className="bg-white/10 backdrop-blur-md mt-7 w-full max-w-2xl rounded-2xl border border-white/20 shadow-[0_4px_30px_rgba(0,0,0,0.2)] p-3 flex items-center gap-3 transition-all duration-300 hover:shadow-xl hover:ring-2 hover:ring-white/30 focus-within:ring-2 focus-within:ring-white/30"
 			>
 				<textarea
 					{...register('ingredients', { required: true })}
@@ -150,7 +150,7 @@ export default function Home() {
 			)}
 
 			{recipe && !error && (
-				<div className="mt-10 w-full flex justify-center">
+				<div className="mt-20 w-full flex justify-center">
 					<RecipeCard
 						title={recipe.title}
 						ingredients={recipe.ingredients}

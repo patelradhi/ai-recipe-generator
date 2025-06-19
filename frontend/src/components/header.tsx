@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from './ui/button';
 import { BriefcaseBusiness } from 'lucide-react';
+import { Cog6ToothIcon } from '@heroicons/react/24/outline';
 
 function Header() {
 	const [showSignIn, setShowSignIn] = React.useState(false);
@@ -39,7 +40,11 @@ function Header() {
 									labelIcon={<BriefcaseBusiness size={15} />}
 									href="/saved-recipes"
 								/>
-								<UserButton.Action label="Manage Account" />
+								<UserButton.Action
+									label="Manage Account"
+									open="custom-drawer"
+									labelIcon={<Cog6ToothIcon className="w-4 h-4" />}
+								/>
 							</UserButton.MenuItems>
 						</UserButton>
 					</SignedIn>
