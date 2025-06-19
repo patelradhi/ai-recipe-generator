@@ -12,6 +12,7 @@
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
+		"@types/cors": "^2.8.19",
 		"@types/express": "^5.0.3",
 		"@types/node": "^24.0.0",
 		"dotenv": "^16.5.0",
@@ -21,5 +22,11 @@
 		"tsx": "^4.20.1",
 		"typescript": "^5.8.3"
 	},
-	"description": ""
+	"description": "",
+	"dependencies": {
+		"@clerk/clerk-sdk-node": "^5.1.6",
+		"@clerk/express": "^1.6.0",
+		"@google/generative-ai": "^0.24.1",
+		"cors": "^2.8.5"
+	}
 }
