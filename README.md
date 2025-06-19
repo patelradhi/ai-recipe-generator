@@ -30,7 +30,7 @@
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/ai-powered-recipe-generator.git
+git clone https://github.com/patelradhi/ai-recipe-generator.git
 cd ai-powered-recipe-generator
 
 # 2. Install root dependencies (if any)
